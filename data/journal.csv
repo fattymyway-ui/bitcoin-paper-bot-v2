@@ -1,0 +1,2 @@
+created_at,settled_at,direction,entry_price,exit_price,stake,pnl,outcome
+2026-10-26T02:01:58.205022+00:00,2026-10-26T02:20:00+00:00,UP,79637.18,79622.26,10.0,-10.0,LOSS
