@@ -1,0 +1,46 @@
+
+name: Bitcoin Paper Bot V2
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bitcoin-paper-bot
+  cancel-in-progress: false
+
+jobs:
+  paper-trading:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Bitcoin paper bot
+        run: python bot.py
+
+      - name: Save trading records
+        run: |
+          git config user.name "paper-bot[bot]"
+          git config user.email "paper-bot[bot]@users.noreply.github.com"
+          git add data/state.json
+          if [ -f data/journal.csv ]; then
+            git add data/journal.csv
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Update paper trading records"
+            git push
+          fi
