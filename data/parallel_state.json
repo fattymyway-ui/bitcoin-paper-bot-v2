@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-11-01T22:16:20.392220+00:00",
+  "portfolios": {
+    "momentum": {
+      "balance": 1000.0,
+      "pending": [],
+      "last_signal_candle": null,
+      "trade_day": "2026-11-01",
+      "trades_today": 0,
+      "loss_today": 0.0,
+      "last_direction": "NO_TRADE",
+      "last_run": "2026-11-01T22:16:20.302005+00:00"
+    },
+    "mean_reversion": {
+      "balance": 1000.0,
+      "pending": [],
+      "last_signal_candle": null,
+      "trade_day": "2026-11-01",
+      "trades_today": 0,
+      "loss_today": 0.0,
+      "last_direction": "NO_TRADE",
+      "last_run": "2026-11-01T22:16:20.302005+00:00"
+    }
+  }
+}
