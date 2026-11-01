@@ -1,0 +1,2 @@
+strategy,created_at,settled_at,direction,entry_price,exit_price,stake,pnl,outcome
+momentum,2026-11-01T22:48:03.443053+00:00,2026-11-01T23:16:46.584688+00:00,UP,77705.99,78026.83,10.0,0.0,VOID
