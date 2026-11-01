@@ -39,8 +39,8 @@ class StrategyLabTests(unittest.TestCase):
 
     def test_missing_interval_skips_trades(self):
         data = candles()
-        data[25]["timestamp"] += timedelta(minutes=1)\n        data[26]["timestamp"] += timedelta(minutes=1)
-        trades = lab.simulate(data, "momentum", 20, 30)
+        data[25]["timestamp"] += timedelta(minutes=1)
+        trades = lab.simulate(data, "momentum", 25, 30)
         self.assertEqual(trades, [])
 
 
