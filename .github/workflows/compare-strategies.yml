@@ -1,0 +1,41 @@
+name: Compare BTC Strategies (Research Only)
+
+on:
+  workflow_dispatch:
+    inputs:
+      history_days:
+        description: "Days of historical 5-minute BTC candles"
+        required: true
+        default: "30"
+        type: choice
+        options:
+          - "30"
+          - "60"
+          - "90"
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate code
+        run: python -m unittest discover -p 'test_*.py' -v
+      - name: Download public historical candles
+        run: python download_history.py --days ${{ inputs.history_days }} --output btc_5m.csv
+      - name: Compare four strategies
+        run: python strategy_lab.py btc_5m.csv --output strategy_comparison.json
+      - name: Upload research output
+        uses: actions/upload-artifact@v4
+        with:
+          name: btc-strategy-comparison
+          path: |
+            strategy_comparison.json
+            btc_5m.csv
+          retention-days: 14
