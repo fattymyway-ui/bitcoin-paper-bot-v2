@@ -32,11 +32,11 @@ jobs:
       - name: Run Bitcoin paper bot
         run: python bot.py
 
-      - name: Save trading records
+      - name: Run parallel paper strategies\n        run: python parallel_bot.py\n\n      - name: Save trading records
         run: |
           git config user.name "paper-bot[bot]"
           git config user.email "paper-bot[bot]@users.noreply.github.com"
-          git add data/state.json
+          git add data/state.json data/parallel_state.json\n          if [ -f data/parallel_journal.csv ]; then\n            git add data/parallel_journal.csv\n          fi
           if [ -f data/journal.csv ]; then
             git add data/journal.csv
           fi
