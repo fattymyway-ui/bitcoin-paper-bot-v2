@@ -3,13 +3,19 @@
   "portfolios": {
     "momentum": {
       "balance": 1000.0,
-      "pending": [],
-      "last_signal_candle": 1794148500,
+      "pending": [
+        {
+          "created_at": "2026-11-08T16:57:34.232094+00:00",
+          "direction": "DOWN",
+          "entry_price": 75674.81
+        }
+      ],
+      "last_signal_candle": 1794156600,
       "trade_day": "2026-11-08",
-      "trades_today": 1,
+      "trades_today": 2,
       "loss_today": 0.0,
-      "last_direction": "NO_TRADE",
-      "last_run": "2026-11-08T16:22:11.781931+00:00"
+      "last_direction": "DOWN",
+      "last_run": "2026-11-08T16:57:34.876915+00:00"
     },
     "mean_reversion": {
       "balance": 1000.0,
@@ -19,7 +25,7 @@
       "trades_today": 0,
       "loss_today": 0.0,
       "last_direction": "NO_TRADE",
-      "last_run": "2026-11-08T16:22:11.781931+00:00"
+      "last_run": "2026-11-08T16:57:34.876915+00:00"
     }
   }
 }
