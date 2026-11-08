@@ -2,10 +2,10 @@
   "balance": 966.0,
   "pending": [],
   "last_signal_candle": 1794043500,
-  "trade_day": "2026-11-07",
-  "trades_today": 1,
+  "trade_day": "2026-11-08",
+  "trades_today": 0,
   "loss_today": 0.0,
-  "last_run": "2026-11-07T23:43:33.733223+00:00",
-  "last_btc_price": 75750.0,
+  "last_run": "2026-11-08T00:15:24.488868+00:00",
+  "last_btc_price": 75697.37,
   "last_direction": "NO_TRADE"
 }
