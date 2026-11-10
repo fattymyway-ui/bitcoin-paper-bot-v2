@@ -1,11 +1,17 @@
 {
   "balance": 966.0,
-  "pending": [],
-  "last_signal_candle": 1794205500,
+  "pending": [
+    {
+      "created_at": "2026-11-10T01:48:45.728675+00:00",
+      "direction": "DOWN",
+      "entry_price": 74961.57
+    }
+  ],
+  "last_signal_candle": 1794274800,
   "trade_day": "2026-11-10",
-  "trades_today": 0,
+  "trades_today": 1,
   "loss_today": 0.0,
-  "last_run": "2026-11-10T00:50:33.425150+00:00",
-  "last_btc_price": 74918.81,
-  "last_direction": "NO_TRADE"
+  "last_run": "2026-11-10T01:48:46.901219+00:00",
+  "last_btc_price": 74961.57,
+  "last_direction": "DOWN"
 }
