@@ -8,24 +8,18 @@
       "trade_day": "2026-11-12",
       "trades_today": 5,
       "loss_today": 0.0,
-      "last_direction": "DOWN",
-      "last_run": "2026-11-12T18:57:19.306236+00:00"
+      "last_direction": "NO_TRADE",
+      "last_run": "2026-11-12T19:44:51.494696+00:00"
     },
     "mean_reversion": {
       "balance": 1000.0,
-      "pending": [
-        {
-          "created_at": "2026-11-12T18:57:18.866126+00:00",
-          "direction": "UP",
-          "entry_price": 71636.8
-        }
-      ],
+      "pending": [],
       "last_signal_candle": 1794509400,
       "trade_day": "2026-11-12",
       "trades_today": 2,
       "loss_today": 0.0,
-      "last_direction": "UP",
-      "last_run": "2026-11-12T18:57:19.306236+00:00"
+      "last_direction": "NO_TRADE",
+      "last_run": "2026-11-12T19:44:51.494696+00:00"
     }
   }
 }
