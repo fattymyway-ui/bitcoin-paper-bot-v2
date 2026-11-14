@@ -8,8 +8,8 @@
       "trade_day": "2026-11-14",
       "trades_today": 5,
       "loss_today": 0.0,
-      "last_direction": "DOWN",
-      "last_run": "2026-11-14T22:54:41.366055+00:00"
+      "last_direction": "UP",
+      "last_run": "2026-11-14T23:22:25.556684+00:00"
     },
     "mean_reversion": {
       "balance": 1000.0,
@@ -18,8 +18,8 @@
       "trade_day": "2026-11-14",
       "trades_today": 5,
       "loss_today": 0.0,
-      "last_direction": "NO_TRADE",
-      "last_run": "2026-11-14T22:54:41.366055+00:00"
+      "last_direction": "DOWN",
+      "last_run": "2026-11-14T23:22:25.556684+00:00"
     }
   }
 }
