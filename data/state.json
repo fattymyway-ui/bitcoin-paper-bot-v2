@@ -5,7 +5,7 @@
   "trade_day": "2026-11-15",
   "trades_today": 5,
   "loss_today": 0.0,
-  "last_run": "2026-11-15T11:12:57.449947+00:00",
-  "last_btc_price": 65252.39,
-  "last_direction": "DOWN"
+  "last_run": "2026-11-15T11:49:14.155776+00:00",
+  "last_btc_price": 65444.33,
+  "last_direction": "NO_TRADE"
 }
