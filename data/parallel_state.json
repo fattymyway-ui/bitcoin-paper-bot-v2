@@ -9,7 +9,7 @@
       "trades_today": 5,
       "loss_today": 0.0,
       "last_direction": "NO_TRADE",
-      "last_run": "2026-11-17T19:15:15.151470+00:00"
+      "last_run": "2026-11-17T20:15:34.089110+00:00"
     },
     "mean_reversion": {
       "balance": 1000.0,
@@ -19,7 +19,7 @@
       "trades_today": 3,
       "loss_today": 0.0,
       "last_direction": "NO_TRADE",
-      "last_run": "2026-11-17T19:15:15.151470+00:00"
+      "last_run": "2026-11-17T20:15:34.089110+00:00"
     }
   }
 }
